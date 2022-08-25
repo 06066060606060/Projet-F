@@ -11,9 +11,8 @@ body {
     text-align: center;
     padding: 1em;
     font-family: 'Satoshi', sans-serif;
-    background-image: url(/img/pastel-tone-purple-pink-blue-gradient-defocused-abstract-photo-smooth-lines-color-background\ 1.svg);
+    background-image: url(../img/pastel-tone-purple-pink-blue-gradient-defocused-abstract-photo-smooth-lines-color-background\ 1.svg);
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .title-font{
@@ -22,6 +21,7 @@ font-size: 42px;
 line-height: 58px;
 letter-spacing: -0.005em;
 }
+
 
 @media only screen and (max-width: 768px) {
     .title-font{
