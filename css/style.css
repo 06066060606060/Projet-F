@@ -1,17 +1,21 @@
-* {
-    text-rendering: geometricPrecision;
-}
 
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-rendering: geometricPrecision;
+  
+}
 :root {
     --bg-color: rgb(2, 65, 191);
     --text-color: rgb(2, 65, 191);
 }
 
-body {
+.block1 {
     text-align: center;
     padding: 1em;
     font-family: 'Satoshi', sans-serif;
-    background-image: url(../img/pastel-tone-purple-pink-blue-gradient-defocused-abstract-photo-smooth-lines-color-background\ 1.svg);
+    background-image: url(../img/bckg.png);
     background-repeat: no-repeat;
 }
 
