@@ -1,11 +1,12 @@
-
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-rendering: geometricPrecision;
-  
+    font-family: 'Satoshi', sans-serif;
+
 }
+
 :root {
     --bg-color: rgb(2, 65, 191);
     --text-color: rgb(2, 65, 191);
@@ -13,25 +14,33 @@ body {
 
 .block1 {
     text-align: center;
-    padding: 1em;
-    font-family: 'Satoshi', sans-serif;
-    background-image: url(../img/bckg.png);
+    background-image: url(../img/svg.svg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.title-font{
-font-weight: 900;
-font-size: 42px;
-line-height: 58px;
-letter-spacing: -0.005em;
+.title-font {
+    margin-top: 40px;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 58px;
+    letter-spacing: -0.005em;
 }
 
-
-@media only screen and (max-width: 768px) {
-    .title-font{
+@media only screen and (max-width: 1280px) {
+    .title-font {
         font-weight: 900;
         font-size: 32px;
         line-height: 40px;
         letter-spacing: -0.005em;
-        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .title-font {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.005em;
+    }
 }
