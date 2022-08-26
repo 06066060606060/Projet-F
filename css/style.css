@@ -15,7 +15,7 @@ body {
 .block1 {
     position: absolute;
     z-index: -10;
-   height: 100vh;
+   height: 80vh;
    width: 100vw;
     clip-path: polygon(0 100%, 200% 0, 0 0, 0 0);
     background: rgb(135,76,203);
