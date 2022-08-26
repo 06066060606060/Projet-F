@@ -4,7 +4,7 @@ body {
     box-sizing: border-box;
     text-rendering: geometricPrecision;
     font-family: 'Satoshi', sans-serif;
-
+    width: 100vw;
 }
 
 .block1 {
@@ -29,9 +29,9 @@ body {
 .block4 {
     position: absolute;
     z-index: -10;
-    height: 70vh;
+    height: 400vh;
     width: 100vw;
-
+    top: -100vh;
     clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0% 100%);
     background: #EBF5FF;
 }
@@ -41,6 +41,15 @@ body {
 
     transform: scale(1.05);
     transition: transform 330ms linear;
+}
+
+.float_logo{
+    position: absolute;
+    top: 10%;
+    padding: 4px;
+    left: -100px;
+    height: 65px;
+    width: 65px;
 }
 
 .doghnut {
@@ -83,7 +92,7 @@ body {
     }
 
     .block3 {
-        height: 50vh;
+        height: 70vh;
     }
 
 }
@@ -98,6 +107,23 @@ body {
 
     .block1 {
         height: 60vh;
+    }
+    .float_logo{
+        position: absolute;
+        top: 5%;
+        padding: 4px;
+        left: -50px;
+        height: 45px;
+        width: 45px;
+    }
+    .block4 {
+        position: absolute;
+        z-index: -10;
+        height: 400vh;
+        width: 100vw;
+        top: -150vh;
+        clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0% 100%);
+        background: #EBF5FF;
     }
 
 }
@@ -119,5 +145,23 @@ body {
         height: 80vh;
     }
 
+    .float_logo{
+        position: absolute;
+        padding: 4px;
+        top: 3%;
+        left: 0px;
+        height: 45px;
+        width: 45px;
+    }
+
+    .block4 {
+        position: absolute;
+        z-index: -10;
+        height: 500vh;
+        width: 100vw;
+        top: 0vh;
+        clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0% 100%);
+        background: #EBF5FF;
+    }
 
 }
