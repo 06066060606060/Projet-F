@@ -4,14 +4,14 @@ body {
     box-sizing: border-box;
     text-rendering: geometricPrecision;
     font-family: 'Satoshi', sans-serif;
-    width: 100vw;
+
 }
 
 .block1 {
     position: absolute;
     z-index: -10;
     height: 80vh;
-    width: 100vw;
+    width: 100%;
     clip-path: polygon(0 100%, 200% 0, 0 0, 0 0);
     background: rgb(135, 76, 203);
     background: linear-gradient(144deg, rgba(135, 76, 203, 1) 0%, rgba(155, 92, 192, 1) 18%, rgba(187, 74, 199, 1) 30%, rgba(255, 172, 138, 1) 52%, rgba(238, 88, 124, 1) 63%, rgba(236, 79, 122, 1) 75%, rgba(135, 76, 203, 0.9500175070028011) 91%);
@@ -21,7 +21,7 @@ body {
     position: absolute;
     z-index: -10;
     height: 70vh;
-    width: 100vw;
+    width: 100%;
     clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
     background: #EBF5FF;
 }
@@ -30,7 +30,7 @@ body {
     position: absolute;
     z-index: -10;
     height: 400vh;
-    width: 100vw;
+    width: 100%;
     top: -100vh;
     clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0% 100%);
     background: #EBF5FF;
@@ -117,13 +117,7 @@ body {
         width: 45px;
     }
     .block4 {
-        position: absolute;
-        z-index: -10;
-        height: 400vh;
-        width: 100vw;
         top: -150vh;
-        clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0% 100%);
-        background: #EBF5FF;
     }
 
 }
@@ -155,13 +149,8 @@ body {
     }
 
     .block4 {
-        position: absolute;
-        z-index: -10;
         height: 500vh;
-        width: 100vw;
         top: 0vh;
-        clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0% 100%);
-        background: #EBF5FF;
     }
 
 }
