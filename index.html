@@ -73,12 +73,20 @@
                     </div>
                     <!-- menu mobile -->
                     <div class="block md:hidden">
-                        <button class="p-2 transition text-white rounded hover:text-gray-500/75">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
-                        </button>
+                        <div class="hamburger-menu">
+                            <input id="menu__toggle" type="checkbox" />
+                            <label class="menu__btn" for="menu__toggle">
+                              <span></span>
+                            </label>
+                        
+                            <ul class="menu__box">
+                              <li><a class="menu__item" href="#">How it works</a></li>
+                              <li><a class="menu__item" href="#">Results</a></li>
+                              <li><a class="menu__item" href="#">FAQ</a></li>
+                              <li><a class="menu__item" href="#">Sign up</a></li>
+                              <li><a class="menu__item" href="#">Login</a></li>
+                            </ul>
+                          </div>
                     </div>
                 </div>
             </div>
@@ -284,8 +292,9 @@
                         prices
                         are variable depending on the number of accounts and the duration of the subscription </p>
                 </div>
-
+                
                 <div class="slider mt-4 mx-auto px-16 md:mr-0 lg:mr-16 ">
+                
                     <input id="slider" onchange="changeHandler(this)" class="w-full cursor-pointer accent-[#0D59EF] rounded-full " type="range" min="0" max="2" step="0" />
                 </div>
 
@@ -612,6 +621,8 @@
                                     class="h-4 w-4" src="./img/right.png"></button>
                         </div>
                     </div>
+<div id="client1">
+
 
                     <div class="flex flex-col w-full max-w-lg p-8 text-left bg-white shadow-md lg:mx-auto rounded-xl">
 
@@ -635,10 +646,10 @@
                             magna
                         </p>
                     </div>
-
-
+                </div>
+                <div id="client2">
                     <div
-                        class="hidden md:flex flex-col w-full max-w-lg p-8 text-left bg-white shadow-md lg:mx-auto rounded-xl ">
+                        class="flex flex-col w-full max-w-lg p-8 text-left bg-white shadow-md lg:mx-auto rounded-xl ">
 
                         <img alt="" class="inline-block object-cover object-center w-12 h-12 rounded-full"
                             src="./img/avatar.png">
@@ -660,14 +671,14 @@
                             rhoncus.
                         </p>
                     </div>
-
-                    <div class="md:hidden flex">
+                </div>
+                    <div class="md:hidden flex"">
                         <button
                             class="mt-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
-                                class="h-4 w-4" src="./img/left.png"></button>
+                                class="h-4 w-4" src="./img/left.png" onclick="friend1()"></button>
                         <button
                             class="mt-4 ml-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
-                                class="h-4 w-4" src="./img/right.png"></button>
+                                class="h-4 w-4" src="./img/right.png" onclick="friend2()"></button>
                     </div>
                 </div>
             </div>
