@@ -294,8 +294,9 @@
                 </div>
                 
                 <div class="slider mt-4 mx-auto px-16">
-                    <input type="text" id="textInput" value="33" >
-                    <input id="slider" onmousemove="changeHandler(this), updateTextInput(this.value);" class="w-full cursor-pointer accent-[#0D59EF] rounded-full " type="range" min="0" max="100" step="1" value="33"/>
+                    <input type="text" id="textInput" value="33" class="hidden">
+                    <input type="text" id="textInputr" value="1" class="w-8 bg-[#0D59EF] rounded-lg text-white pl-[12px] mb-2 pointer-events-none ml-[31%]" >
+                    <input id="slider" onmousemove="changeHandler(this), updateTextInput(this.value);" class="w-full cursor-pointer accent-[#0D59EF] rounded-full " type="range" min="0" max="100" step="3" value="33"/>
                 </div>
 
                 <div id="react1" style="display: block" class="relative">
