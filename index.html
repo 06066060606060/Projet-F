@@ -20,9 +20,9 @@
         <div class="flex items-center justify-between h-16">
             <div class="flex-1 md:flex md:items-center md:gap-12">
 
-                    <span class="sr-only">Home</span>
-                    <img src="./img/Logo.png" class="w-[212px] h-[54px]">
-        
+                <span class="sr-only">Home</span>
+                <img src="./img/Logo.png" class="w-[212px] h-[54px]">
+
             </div>
 
             <div class="md:flex md:items-center md:gap-12">
@@ -76,17 +76,17 @@
                         <div class="hamburger-menu">
                             <input id="menu__toggle" type="checkbox" />
                             <label class="menu__btn" for="menu__toggle">
-                              <span></span>
+                                <span></span>
                             </label>
-                        
+
                             <ul class="menu__box">
-                              <li><a class="menu__item" href="#">How it works</a></li>
-                              <li><a class="menu__item" href="#">Results</a></li>
-                              <li><a class="menu__item" href="#">FAQ</a></li>
-                              <li><a class="menu__item" href="#">Sign up</a></li>
-                              <li><a class="menu__item" href="#">Login</a></li>
+                                <li><a class="menu__item" href="#">How it works</a></li>
+                                <li><a class="menu__item" href="#">Results</a></li>
+                                <li><a class="menu__item" href="#">FAQ</a></li>
+                                <li><a class="menu__item" href="#">Sign up</a></li>
+                                <li><a class="menu__item" href="#">Login</a></li>
                             </ul>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,7 +102,8 @@
                 <h1 class="title-font text-white capitalize drop-shadow">Get Famous And Earn <br> New Customers With
                     <br>The Best Instagram Bot
                 </h1>
-                <p class="mb-8 mt-6 leading-relaxed text-white text-base font-bold drop-shadow">SoGrowth is the best bot to get
+                <p class="mb-8 mt-6 leading-relaxed text-white text-base font-bold drop-shadow">SoGrowth is the best bot
+                    to get
                     hundreds of real followers, views and engagement per DAY. Our bot is secure and practicing the
                     latest 2022 methods of growth hacking following the new Instagram updates. Get famous on
                     Instagram
@@ -215,7 +216,7 @@
             <card class="text-gray-600 md:px-12 px-2 mx-auto">
                 <div class="container mx-auto flex md:px-12 md:flex-row flex-col-reverse items-center">
                     <div
-                        class="lg:flex-grow md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center">
+                        class="lg:flex-grow md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center lg:ml-20">
                         <h1 class="text-2xl md:text-4xl mb-6 font-black text-gray-900 capitalize px-4 md:px-0">How our
                             bot bring
                             you<br>
@@ -228,8 +229,8 @@
                             pretium. Id et amet, id etiam tellus consectetur rhoncus lectus sit. Sociis eu justo, massa
                             eget quis maecenas turpis sagittis, neque. Malesuada nisi.</p>
                     </div>
-                    <div class="lg:p-8 lg:w-full md:w-1/2 w-[366px]">
-                        <img class="object-cover object-center rounded p-12" alt="" src="./img/Group2.png">
+                    <div class="lg:p-8 lg:w-full lg:ml-8 md:w-1/2 w-[366px]">
+                        <img class="object-cover object-center rounded p-12 lg:ml-8" alt="" src="./img/Group2.png">
                     </div>
                 </div>
             </card>
@@ -259,19 +260,38 @@
                                         style="color: #0D59EF">+10K</span> People are already with us</span>
                             </div>
                         </div>
-                        <p class="leading-relaxed text-gray-500 font-medium text-left px-2">There are many variations of
-                            passages of
-                            Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
-                            humour, or randomised words which don't look even slightly believable. If you are going to
-                            use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden
-                            in the middle of text. </p>
+                        <div id="stats1">
+                            <p class="block leading-relaxed text-gray-500 font-medium text-left px-2">There are many
+                                variations of
+                                passages of
+                                Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                                injected
+                                humour, or randomised words which don't look even slightly believable. If you are going
+                                to
+                                use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
+                                hidden
+                                in the middle of text. </p>
+                        </div>
+                        <div id="stats2" class="hidden">
+                            <p class="leading-relaxed text-gray-500 font-medium text-left px-2">
+                                Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                                injected
+                                humour, or randomised words which don't look even slightly believable. If you are going
+                                to
+                                use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
+                                hidden
+                                in the middle of text.There are many variations of
+                                passages of </p>
+                        </div>
                         <div class="flex">
-                            <button
-                                class="mt-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
-                                    class="h-4 w-4" src="./img/left.png"></button>
-                            <button
-                                class="mt-4 ml-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform  text-lg shadow-md"><img
-                                    class="h-4 w-4" src="./img/right.png"></button>
+                            <button onclick="stats1();"
+                                class="mt-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md">
+                                <img class="h-4 w-4" src="./img/left.png">
+                            </button>
+                            <button onclick="stats2();"
+                                class="mt-4 ml-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform  text-lg shadow-md">
+                                <img class="h-4 w-4" src="./img/right.png">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -287,16 +307,21 @@
                     <h1 class="text-3xl md:text-4xl mb-4 font-black text-gray-900 capitalize px-4">Pricing plans for
                         <span style="color: #0D59EF">all use cases</span>
                     </h1>
-                    <p class="leading-relaxed text-gray-500 font-medium max-w-xl p-2 px-4 text-center text-lg ">You get one week for free.
+                    <p class="leading-relaxed text-gray-500 font-medium max-w-xl p-2 px-4 text-center text-lg ">You get
+                        one week for free.
                         Our
                         prices
                         are variable depending on the number of accounts and the duration of the subscription </p>
                 </div>
-                
+
                 <div class="slider mt-4 mx-auto px-16">
                     <input type="text" id="textInput" value="33" class="hidden">
-                    <input type="text" id="textInputr" value="1" class="w-8 bg-[#0D59EF] rounded-lg text-white pl-[12px] mb-2 pointer-events-none ml-[31%]" >
-                    <input id="slider" onchange="changeHandler(this), updateTextInput(this.value);" class="w-full cursor-pointer accent-[#0D59EF] rounded-full " type="range" min="0" max="100" step="3" value="33"/>
+                    <input type="text" id="textInputr" value="1"
+                        class="w-8 bg-[#0D59EF] rounded-lg text-white pl-[12px] mb-2 pointer-events-none ml-[31%]">
+                    <input id="slider" onchange="changeHandler(this), updateTextInput(this.value);"
+                        onpointermove="changeHandler(this), updateTextInput(this.value);"
+                        class="w-full cursor-pointer accent-[#0D59EF] rounded-full " type="range" min="0" max="100"
+                        step="3" value="33" />
                 </div>
 
                 <div id="react1" style="display: block" class="relative">
@@ -310,7 +335,8 @@
                                     <span class="text-5xl font-extrabold tracking-tight">$250</span>
                                 </p>
                                 <ul role="list" class="pt-6 mt-6 py-4 space-y-2">
-                                    <p class="text-md font-semibold text-neutral-600 max-w-[220px]">Explode your engagement
+                                    <p class="text-md font-semibold text-neutral-600 max-w-[220px]">Explode your
+                                        engagement
                                         /
                                         <br> followers and gain new customers.<br> <br>
                                         Start the rapid Instagram account growth!
@@ -405,7 +431,8 @@
                                     <span class="text-5xl font-extrabold tracking-tight">$650</span>
                                 </p>
                                 <ul role="list" class="pt-6 mt-6 py-4 space-y-2">
-                                    <p class="text-md font-semibold text-neutral-600 max-w-[220px]">Explode your engagement
+                                    <p class="text-md font-semibold text-neutral-600 max-w-[220px]">Explode your
+                                        engagement
                                         /
                                         <br> followers and gain new customers.<br> <br>
                                         Start the rapid Instagram account growth!
@@ -500,7 +527,8 @@
                                     <span class="text-5xl font-extrabold tracking-tight">$6050</span>
                                 </p>
                                 <ul role="list" class="pt-6 mt-6 py-4 space-y-2">
-                                    <p class="text-md font-semibold text-neutral-600 max-w-[220px]">Explode your engagement
+                                    <p class="text-md font-semibold text-neutral-600 max-w-[220px]">Explode your
+                                        engagement
                                         /
                                         <br> followers and gain new customers.<br> <br>
                                         Start the rapid Instagram account growth!
@@ -614,72 +642,130 @@
                         <p class=" text-gray-500 font-xs">Nibh consequat amet, pretium aliquet fusce vestibulum duis.
                             Dui amet neque a facilisi sit.</p>
                         <div class="hidden md:flex">
-                            <button
+                            <button onclick="clientdown()"
                                 class="mt-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
                                     class="h-4 w-4" src="./img/left.png"></button>
-                            <button
+                            <button onclick="clientup()"
                                 class="mt-4 ml-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
                                     class="h-4 w-4" src="./img/right.png"></button>
                         </div>
                     </div>
-<div id="client1">
 
+                    <div id="client1">
+                        <div
+                            class="flex flex-col w-full max-w-lg p-8 text-left bg-white shadow-md lg:mx-auto rounded-xl">
 
-                    <div class="flex flex-col w-full max-w-lg p-8 text-left bg-white shadow-md lg:mx-auto rounded-xl">
-
-                        <img alt="" class="inline-block object-cover object-center w-12 h-12 rounded-full"
-                            src="./img/avatar.png">
-                        <div class="flex justify-between">
-                            <h2 class="my-4 text-xl font-semibold">
-                                Robert Fox<br>
-                                <span href="#" class="font-light text-gray-600 lg:mb-0 text-xs">UI/UX Designer</span>
-                            </h2>
-                            <div class="flex">
-                                <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                            <img alt="" class="inline-block object-cover object-center w-12 h-12 rounded-full"
+                                src="https://source.unsplash.com/40x40/?portrait?1">
+                            <div class="flex justify-between">
+                                <h2 class="my-4 text-xl font-semibold">
+                                    Robert Fox<br>
+                                    <span href="#" class="font-light text-gray-600 lg:mb-0 text-xs">UI/UX
+                                        Designer</span>
+                                </h2>
+                                <div class="flex">
+                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                </div>
                             </div>
+                            <p class="mx-auto font-medium text-sm leading-relaxed text-gray-800">Sed nec aenean
+                                habitasse
+                                volutpat orci, ultrices. Semper ut aenean arcu in proin. Enim viverra arcu, massa tempus
+                                rhoncus.
+                            </p>
                         </div>
-                        <p class="mx-auto font-medium text-sm leading-relaxed text-gray-800">In diam vulputate id risus
-                            condimentum aliquam integer enim. Auctor nisl, urna, tincidunt tincidunt ut turpis ante
-                            magna
-                        </p>
                     </div>
-                </div>
-                <div id="client2">
-                    <div
-                        class="flex flex-col w-full max-w-lg p-8 text-left bg-white shadow-md lg:mx-auto rounded-xl ">
 
-                        <img alt="" class="inline-block object-cover object-center w-12 h-12 rounded-full"
-                            src="./img/avatar.png">
-                        <div class="flex justify-between">
-                            <h2 class="my-4 text-xl font-semibold">
-                                Jenny Wilson<br>
-                                <span href="#" class="font-light text-gray-600 lg:mb-0 text-xs">Web Developer</span>
-                            </h2>
-                            <div class="flex">
-                                <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                    <div id="client2" class="sm:hidden">
+                        <div
+                            class="flex flex-col w-full max-w-lg p-8 text-left bg-white shadow-md lg:mx-auto rounded-xl ">
+
+                            <img alt="" class="inline-block object-cover object-center w-12 h-12 rounded-full"
+                                src="https://source.unsplash.com/40x40/?portrait?2">
+                            <div class="flex justify-between">
+                                <h2 class="my-4 text-xl font-semibold">
+                                    Jenny Wilson<br>
+                                    <span href="#" class="font-light text-gray-600 lg:mb-0 text-xs">Web Developer</span>
+                                </h2>
+                                <div class="flex">
+                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                </div>
                             </div>
+                            <p class="mx-auto font-medium text-sm leading-relaxed text-gray-800">Sed nec aenean
+                                risus
+                                condimentum aliquam integer enim. Auctor nisl, urna, tincidunt tincidunt ut turpis ante
+                                magna
+                            </p>
                         </div>
-                        <p class="mx-auto font-medium text-sm leading-relaxed text-gray-800">Sed nec aenean habitasse
-                            volutpat orci, ultrices. Semper ut aenean arcu in proin. Enim viverra arcu, massa tempus
-                            rhoncus.
-                        </p>
                     </div>
-                </div>
+
+                    <div id="client3" class="hidden">
+                        <div
+                            class="flex flex-col w-full max-w-lg p-8 text-left bg-white shadow-md lg:mx-auto rounded-xl ">
+
+                            <img alt="" class="inline-block object-cover object-center w-12 h-12 rounded-full"
+                                src="https://source.unsplash.com/40x40/?portrait?2">
+                            <div class="flex justify-between">
+                                <h2 class="my-4 text-xl font-semibold">
+                                    Franck Miller<br>
+                                    <span href="#" class="font-light text-gray-600 lg:mb-0 text-xs">Photographer</span>
+                                </h2>
+                                <div class="flex">
+                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                  
+                                </div>
+                            </div>
+                            <p class="mx-auto font-medium text-sm leading-relaxed text-gray-800">Sed nec aenean
+                                habitasse
+                                volutpat orci, ultrices. Semper ut aenean arcu in proin. Enim viverra arcu, massa tempus
+                                rhoncus.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="client4"  class="hidden">
+                        <div
+                            class="flex flex-col w-full max-w-lg p-8 text-left bg-white shadow-md lg:mx-auto rounded-xl ">
+
+                            <img alt="" class="inline-block object-cover object-center w-12 h-12 rounded-full"
+                                src="https://source.unsplash.com/40x40/?portrait?3">
+                            <div class="flex justify-between">
+                                <h2 class="my-4 text-xl font-semibold">
+                                    Jane Robins<br>
+                                    <span href="#" class="font-light text-gray-600 lg:mb-0 text-xs">Developer</span>
+                                </h2>
+                                <div class="flex">
+                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                </div>
+                            </div>
+                            <p class="mx-auto font-medium text-sm leading-relaxed text-gray-800">Sed nec aenean
+                                risus
+                                condimentum aliquam integer enim. Auctor nisl, urna, tincidunt tincidunt ut turpis ante
+                                magna
+                            </p>
+                        </div>
+                    </div>
+
                     <div class="md:hidden flex"">
                         <button
-                            class="mt-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
-                                class="h-4 w-4" src="./img/left.png" onclick="friend1()"></button>
+                            class=" mt-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none
+                        hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
+                            class="h-4 w-4" src="./img/left.png" onclick="clientdown()"></button>
                         <button
                             class="mt-4 ml-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
-                                class="h-4 w-4" src="./img/right.png" onclick="friend2()"></button>
+                                class="h-4 w-4" src="./img/right.png" onclick="clientup()"></button>
                     </div>
                 </div>
             </div>
