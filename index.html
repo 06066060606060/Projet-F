@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap"
         rel="stylesheet">
-   
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/animate.min.css" />
     <title>Home</title>
 </head>
@@ -194,11 +194,11 @@
         <div class="max-w-screen-xl mx-auto pb-16">
             <card class="text-gray-600 md:px-8 px-2 pt-14">
                 <div class="container mx-auto flex md:px-5 py-8 md:flex-row flex-col items-center">
-                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-full">
-                        <img class="object-cover object-center rounded p-8 ml-4" alt="" src="./img/Group.png">
+                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-[366px]">
+                        <img class="object-cover object-center rounded p-8" alt="" src="./img/Group.png">
                     </div>
                     <div
-                        class="lg:flex-grow md:w-1/2 lg:pr-14 md:pl-14 flex flex-col md:items-start md:text-left md:mb-0 items-center text-center">
+                        class="lg:flex-grow md:w-1/2 lg:pr-14 md:pl-14 flex flex-col md:items-start md:text-left md:mb-0 items-center text-center ">
                         <h1 class="text-2xl md:text-4xl mb-6 font-black text-gray-900 capitalize">A brand new <span
                                 style="color: #0D59EF">powerfull</span>
                             tool</h1>
@@ -228,7 +228,7 @@
                             pretium. Id et amet, id etiam tellus consectetur rhoncus lectus sit. Sociis eu justo, massa
                             eget quis maecenas turpis sagittis, neque. Malesuada nisi.</p>
                     </div>
-                    <div class="lg:p-8 md:w-1/2 w-full">
+                    <div class="lg:p-8 lg:w-full md:w-1/2 w-[366px]">
                         <img class="object-cover object-center rounded p-12" alt="" src="./img/Group2.png">
                     </div>
                 </div>
@@ -296,7 +296,7 @@
                 <div class="slider mt-4 mx-auto px-16">
                     <input type="text" id="textInput" value="33" class="hidden">
                     <input type="text" id="textInputr" value="1" class="w-8 bg-[#0D59EF] rounded-lg text-white pl-[12px] mb-2 pointer-events-none ml-[31%]" >
-                    <input id="slider" onmousemove="changeHandler(this), updateTextInput(this.value);" class="w-full cursor-pointer accent-[#0D59EF] rounded-full " type="range" min="0" max="100" step="3" value="33"/>
+                    <input id="slider" onchange="changeHandler(this), updateTextInput(this.value);" class="w-full cursor-pointer accent-[#0D59EF] rounded-full " type="range" min="0" max="100" step="3" value="33"/>
                 </div>
 
                 <div id="react1" style="display: block" class="relative">

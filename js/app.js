@@ -32,17 +32,15 @@ function changeHandler (e) {
 }
 
 function updateTextInput(val) {
-    const color_1 = 'linear-gradient(to right, #0D59EF 33%, #0D59EF '+ val +'%, white '+ val +'%, white 100%)'
+    const color_1 = 'linear-gradient(to right, #0D59EF 0%, #0D59EF '+ val +'%, white '+ val +'%, white 100%)'
     const color_2 = '#FFFFFF'
     var rounded = Math.ceil(val / 33)
     document.getElementById('textInputr').value=rounded;
     document.getElementById('textInput').value=val;
     textInputr.style.marginLeft = val-2 + '%';
-    if (val < 1) {
-        slider.style.background = color_2;
-    } else {
+
         slider.style.background = color_1;
-    }
+    
   
 
 

@@ -256,7 +256,7 @@ body {
   .menu__btn {
     position: fixed;
     top: 30px;
-    right: 20px;
+    right: 40px;
     width: 26px;
     height: 26px;
     cursor: pointer;
