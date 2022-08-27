@@ -88,6 +88,7 @@ body {
     position: absolute;
     z-index: -10;
     height: 70vh;
+    margin-top: -50px;
     width: 100%;
     clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
     background: #EBF5FF;
@@ -160,6 +161,7 @@ body {
 
     .block3 {
         height: 70vh;
+        margin-top: -50px;
     }
 
 }
@@ -187,6 +189,12 @@ body {
         top: -150vh;
     }
 
+    .block3 {
+      height: 100vh;
+      clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+      margin-top: -50px;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -203,7 +211,9 @@ body {
     }
 
     .block3 {
-        height: 80vh;
+       margin-top: -50px;
+        height: 100vh;
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
     }
 
     .float_logo{
@@ -221,6 +231,10 @@ body {
     }
 
 }
+
+
+/* //____________________menu mobile________________________________ */
+
 
 #menu__toggle {
     opacity: 0;
