@@ -56,17 +56,40 @@ function stats2() {
 
 }
 
-function clientdown() {
-    client1.style.display = 'block';
-    client2.style.display = 'block';
-    client3.style.display = 'none';
-    client4.style.display = 'none';
+
+function getMultipleRandom(arr, num) {
+    const shuffled = [...arr].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, num);
+  }
+  
+
+
+function displayClient(){
+    const arr = ['client1', 'client2', 'client3', 'client4'];
+   
+    var rands = getMultipleRandom(arr, 4);
+    const client11 = document.getElementById(rands[1])
+    const client22 = document.getElementById(rands[0])
+    const client33 = document.getElementById(rands[3])
+    const client44 = document.getElementById(rands[2])
+    client11.style.display = 'block';
+    client22.style.display = 'block';
+    client33.style.display = 'none';
+    client44.style.display = 'none';
+
 }
 
-function clientup() {
-    client1.style.display = 'none';
-    client2.style.display = 'none';
-    client3.style.display = 'block';
-    client4.style.display = 'block';
+function displayClient2(){
+    const arr = ['client1', 'client2', 'client3', 'client4'];
+   
+    var rands = getMultipleRandom(arr, 4);
+    const client11 = document.getElementById(rands[1])
+    const client22 = document.getElementById(rands[0])
+    const client33 = document.getElementById(rands[3])
+    const client44 = document.getElementById(rands[2])
+    client11.style.display = 'block';
+    client22.style.display = 'none';
+    client33.style.display = 'none';
+    client44.style.display = 'none';
 
 }

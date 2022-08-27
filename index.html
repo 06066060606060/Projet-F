@@ -642,10 +642,10 @@
                         <p class=" text-gray-500 font-xs">Nibh consequat amet, pretium aliquet fusce vestibulum duis.
                             Dui amet neque a facilisi sit.</p>
                         <div class="hidden md:flex">
-                            <button onclick="clientdown()"
+                            <button onclick="displayClient();"
                                 class="mt-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
                                     class="h-4 w-4" src="./img/left.png"></button>
-                            <button onclick="clientup()"
+                            <button onclick="displayClient();"
                                 class="mt-4 ml-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
                                     class="h-4 w-4" src="./img/right.png"></button>
                         </div>
@@ -653,7 +653,7 @@
 
                     <div id="client1">
                         <div
-                            class="flex flex-col w-full max-w-lg p-8 text-left bg-white shadow-md lg:mx-auto rounded-xl">
+                            class="flex flex-col w-full max-w-lg p-8 text-left bg-white shadow-md lg:mx-auto rounded-xl ">
 
                             <img alt="" class="inline-block object-cover object-center w-12 h-12 rounded-full"
                                 src="https://source.unsplash.com/40x40/?portrait?1">
@@ -670,7 +670,7 @@
                                     <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
                                 </div>
                             </div>
-                            <p class="mx-auto font-medium text-sm leading-relaxed text-gray-800">Sed nec aenean
+                            <p class="mx-auto font-medium text-sm leading-relaxed text-gray-800 overflow-clip h-[68px] md:h-auto">Sed nec aenean
                                 habitasse
                                 volutpat orci, ultrices. Semper ut aenean arcu in proin. Enim viverra arcu, massa tempus
                                 rhoncus.
@@ -678,7 +678,7 @@
                         </div>
                     </div>
 
-                    <div id="client2" class="sm:hidden">
+                    <div id="client2" class="hidden md:block">
                         <div
                             class="flex flex-col w-full max-w-lg p-8 text-left bg-white shadow-md lg:mx-auto rounded-xl ">
 
@@ -697,7 +697,7 @@
                                     <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
                                 </div>
                             </div>
-                            <p class="mx-auto font-medium text-sm leading-relaxed text-gray-800">Sed nec aenean
+                            <p class="mx-auto font-medium text-sm leading-relaxed text-gray-800 h-[68px] md:h-auto">Sed nec aenean
                                 risus
                                 condimentum aliquam integer enim. Auctor nisl, urna, tincidunt tincidunt ut turpis ante
                                 magna
@@ -723,7 +723,7 @@
                                   
                                 </div>
                             </div>
-                            <p class="mx-auto font-medium text-sm leading-relaxed text-gray-800">Sed nec aenean
+                            <p class="mx-auto font-medium text-sm leading-relaxed text-gray-800 h-[68px] md:h-auto">Sed nec aenean
                                 habitasse
                                 volutpat orci, ultrices. Semper ut aenean arcu in proin. Enim viverra arcu, massa tempus
                                 rhoncus.
@@ -750,7 +750,7 @@
                                     <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
                                 </div>
                             </div>
-                            <p class="mx-auto font-medium text-sm leading-relaxed text-gray-800">Sed nec aenean
+                            <p class="mx-auto font-medium text-sm leading-relaxed text-gray-800 h-[68px] md:h-auto">Sed nec aenean
                                 risus
                                 condimentum aliquam integer enim. Auctor nisl, urna, tincidunt tincidunt ut turpis ante
                                 magna
@@ -762,10 +762,10 @@
                         <button
                             class=" mt-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none
                         hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
-                            class="h-4 w-4" src="./img/left.png" onclick="clientdown()"></button>
+                            class="h-4 w-4" src="./img/left.png" onclick="displayClient2();"></button>
                         <button
                             class="mt-4 ml-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
-                                class="h-4 w-4" src="./img/right.png" onclick="clientup()"></button>
+                                class="h-4 w-4" src="./img/right.png" onclick="displayClient2();"></button>
                     </div>
                 </div>
             </div>
