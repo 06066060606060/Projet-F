@@ -7,6 +7,11 @@ body {
 
 }
 
+:root {
+  --first-color: #0D59EF;
+  --second-color: #EBF5FF;
+}
+
 #slider {
    
     height: 14px;
@@ -91,7 +96,7 @@ body {
     margin-top: -50px;
     width: 100%;
     clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
-    background: #EBF5FF;
+    background: var(--second-color);
 }
 
 .block4 {
@@ -101,7 +106,7 @@ body {
     width: 100%;
     top: -100vh;
     clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0% 100%);
-    background: #EBF5FF;
+    background: var(--second-color);
 }
 
 

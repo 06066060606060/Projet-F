@@ -31,20 +31,19 @@
 
                     <ul class="flex items-center gap-6 text-base font-bold">
                         <li>
-                            <a class="text-white transition-colors duration-300 transform hover:text-gray-600 pt-8"
-                                href="/">
+                            <a class="text-white transition-colors duration-300 transform hover:text-gray-600 pt-8" href="/how.html">
                                 How it works
                             </a>
                         </li>
 
                         <li>
-                            <a class="text-white transition-colors duration-300 transform hover:text-gray-600" href="/">
+                            <a class="text-white transition-colors duration-300 transform hover:text-gray-600" href="/results.html">
                                 Results
                             </a>
                         </li>
 
                         <li>
-                            <a class="text-white transition-colors duration-300 transform hover:text-gray-600" href="/">
+                            <a class="text-white transition-colors duration-300 transform hover:text-gray-600" href="/faq.html">
                                 FAQ
                             </a>
                         </li>
@@ -80,9 +79,9 @@
                             </label>
 
                             <ul class="menu__box">
-                                <li><a class="menu__item" href="#">How it works</a></li>
-                                <li><a class="menu__item" href="#">Results</a></li>
-                                <li><a class="menu__item" href="#">FAQ</a></li>
+                                <li><a class="menu__item" href="/how.html">How it works</a></li>
+                                <li><a class="menu__item" href="/results.html">Results</a></li>
+                                <li><a class="menu__item" href="/faq.html">FAQ</a></li>
                                 <li><a class="menu__item" href="#">Sign up</a></li>
                                 <li><a class="menu__item" href="#">Login</a></li>
                             </ul>
@@ -285,11 +284,11 @@
                         </div>
                         <div class="flex">
                             <button onclick="stats1();"
-                                class="mt-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md">
+                                class="mt-4 text-gray-700 bg-[color:var(--first-color)] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md">
                                 <img class="h-4 w-4" src="./img/left.png">
                             </button>
                             <button onclick="stats2();"
-                                class="mt-4 ml-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform  text-lg shadow-md">
+                                class="mt-4 ml-4 text-gray-700 bg-[color:var(--first-color)] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform  text-lg shadow-md">
                                 <img class="h-4 w-4" src="./img/right.png">
                             </button>
                         </div>
@@ -317,10 +316,10 @@
                 <div class="slider mt-4 mx-auto px-16">
                     <input type="text" id="textInput" value="33" class="hidden">
                     <input type="text" id="textInputr" value="1"
-                        class="w-8 bg-[#0D59EF] rounded-lg text-white pl-[12px] mb-2 pointer-events-none ml-[31%]">
+                        class="w-8 bg-[color:var(--first-color)] rounded-lg text-white pl-[12px] mb-2 pointer-events-none ml-[31%]">
                     <input id="slider" onchange="changeHandler(this), updateTextInput(this.value);"
                         onpointermove="changeHandler(this), updateTextInput(this.value);"
-                        class="w-full cursor-pointer accent-[#0D59EF] rounded-full " type="range" min="0" max="100"
+                        class="w-full cursor-pointer accent-[color:var(--first-color)] rounded-full " type="range" min="0" max="100"
                         step="3" value="33" />
                 </div>
 
@@ -328,9 +327,9 @@
                     <div class="relative px-14 pb-14 pt-8 lg:grid lg:grid-cols-2 rounded-xl">
                         <!-- section gauche -->
                         <div
-                            class="relative flex flex-col p-12 bg-white rounded-2xl shadow-md z-10 border-t-4 border-[#0D59EF]">
+                            class="relative flex flex-col p-12 bg-white rounded-2xl shadow-md z-10 border-t-4 border-[color:var(--first-color)]">
                             <div class="flex-1">
-                                <h3 class="text-xl font-semibold text-[#0D59EF]">Pro - Weekly</h3>
+                                <h3 class="text-xl font-semibold text-[color:var(--first-color)]">Pro - Weekly</h3>
                                 <p class="flex items-baseline mt-4 text-[#1F2D49]">
                                     <span class="text-5xl font-extrabold tracking-tight">$250</span>
                                 </p>
@@ -345,7 +344,7 @@
                             </div>
                             <div class="z-50 rounded-lg pt-8">
                                 <a href="" type="highlight"
-                                    class="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-white shadow-md rounded-xl transition-colors duration-300 transform bg-[#0D59EF] hover:bg-gray-400">
+                                    class="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-white shadow-md rounded-xl transition-colors duration-300 transform bg-[color:var(--first-color)] hover:bg-gray-400">
                                     7-Day Free Trial </a>
                             </div>
                         </div>
@@ -424,9 +423,9 @@
                     <div class="relative px-14 pb-14 pt-8  lg:grid lg:grid-cols-2 rounded-xl">
                         <!-- section gauche -->
                         <div
-                            class="relative flex flex-col p-12 bg-white rounded-2xl shadow-md z-10 border-t-4 border-[#0D59EF]">
+                            class="relative flex flex-col p-12 bg-white rounded-2xl shadow-md z-10 border-t-4 border-[color:var(--first-color)]">
                             <div class="flex-1">
-                                <h3 class="text-xl font-semibold text-[#0D59EF]">Pro - Monthly</h3>
+                                <h3 class="text-xl font-semibold text-[color:var(--first-color)]">Pro - Monthly</h3>
                                 <p class="flex items-baseline mt-4 text-[#1F2D49]">
                                     <span class="text-5xl font-extrabold tracking-tight">$650</span>
                                 </p>
@@ -441,7 +440,7 @@
                             </div>
                             <div class="z-50 rounded-lg pt-8">
                                 <a href="" type="highlight"
-                                    class="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-white shadow-md rounded-xl transition-colors duration-300 transform bg-[#0D59EF] hover:bg-gray-400">
+                                    class="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-white shadow-md rounded-xl transition-colors duration-300 transform bg-[color:var(--first-color)] hover:bg-gray-400">
                                     7-Day Free Trial </a>
                             </div>
                         </div>
@@ -520,9 +519,9 @@
                     <div class="relative px-14 pb-14 pt-8  lg:grid lg:grid-cols-2 rounded-xl">
                         <!-- section gauche -->
                         <div
-                            class="relative flex flex-col p-12 bg-white rounded-2xl shadow-md z-10 border-t-4 border-[#0D59EF]">
+                            class="relative flex flex-col p-12 bg-white rounded-2xl shadow-md z-10 border-t-4 border-[color:var(--first-color)]">
                             <div class="flex-1">
-                                <h3 class="text-xl font-semibold text-[#0D59EF]">Pro - Annually</h3>
+                                <h3 class="text-xl font-semibold text-[color:var(--first-color)]">Pro - Annually</h3>
                                 <p class="flex items-baseline mt-4 text-[#1F2D49]">
                                     <span class="text-5xl font-extrabold tracking-tight">$6050</span>
                                 </p>
@@ -537,7 +536,7 @@
                             </div>
                             <div class="z-50 rounded-lg pt-8">
                                 <a href="" type="highlight"
-                                    class="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-white shadow-md rounded-xl transition-colors duration-300 transform bg-[#0D59EF] hover:bg-gray-400">
+                                    class="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-white shadow-md rounded-xl transition-colors duration-300 transform bg-[color:var(--first-color)] hover:bg-gray-400">
                                     7-Day Free Trial </a>
                             </div>
                         </div>
@@ -633,7 +632,7 @@
                 <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
 
                     <div class="flex flex-col w-full max-w-lg p-4 text-left lg:mx-auto rounded-xl">
-                        <h2 class="my-2 text-base font-semibold text-[#0D59EF]">
+                        <h2 class="my-2 text-base font-semibold text-[color:var(--first-color)]">
                             Customer Reviews
                         </h2>
                         <h1 class="text-4xl md:text-3xl mb-3 font-black text-gray-900 capitalize">What our clients say
@@ -643,10 +642,10 @@
                             Dui amet neque a facilisi sit.</p>
                         <div class="hidden md:flex">
                             <button onclick="displayClient();"
-                                class="mt-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
+                                class="mt-4 text-gray-700 bg-[color:var(--first-color)] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
                                     class="h-4 w-4" src="./img/left.png"></button>
                             <button onclick="displayClient();"
-                                class="mt-4 ml-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
+                                class="mt-4 ml-4 text-gray-700 bg-[color:var(--first-color)] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
                                     class="h-4 w-4" src="./img/right.png"></button>
                         </div>
                     </div>
@@ -760,11 +759,11 @@
 
                     <div class="md:hidden flex"">
                         <button
-                            class=" mt-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none
+                            class=" mt-4 text-gray-700 bg-[color:var(--first-color)] border-0 py-3 px-3 focus:outline-none
                         hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
                             class="h-4 w-4" src="./img/left.png" onclick="displayClient2();"></button>
                         <button
-                            class="mt-4 ml-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
+                            class="mt-4 ml-4 text-gray-700 bg-[color:var(--first-color)] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
                                 class="h-4 w-4" src="./img/right.png" onclick="displayClient2();"></button>
                     </div>
                 </div>
@@ -777,7 +776,7 @@
 
 
     <section class="lg:max-w-screen-lg mx-auto py-16">
-        <div class="bg-[#0D59EF] rounded-3xl mx-8 relative overflow-hidden">
+        <div class="bg-[color:var(--first-color)] rounded-3xl mx-8 relative overflow-hidden">
             <div class="doghnut "></div>
             <div class="container flex flex-col items-center px-4 py-12 mx-auto text-center">
 
@@ -920,7 +919,7 @@
                         corporis earum similique!
                     </p>
                 </details>
-                <div class="bg-[#0D59EF] rounded-xl mt-4">
+                <div class="bg-[color:var(--first-color)] rounded-xl mt-4">
                     <div
                         class="container flex flex-col md:flex-row px-4 py-8 md:justify-around items-center text-center">
                         <h2
