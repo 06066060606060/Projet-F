@@ -81,7 +81,6 @@ function displayClient(){
 
 function displayClient2(){
     const arr = ['client1', 'client2', 'client3', 'client4'];
-   
     var rands = getMultipleRandom(arr, 4);
     const client11 = document.getElementById(rands[1])
     const client22 = document.getElementById(rands[0])

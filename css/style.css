@@ -271,6 +271,11 @@ img{
       height: 110vh;
     }
     
+    .block7{
+      height: 80vh;
+      width: 100%;
+    }
+
     .menu__btn {
     position: fixed;
     top: 30px;
