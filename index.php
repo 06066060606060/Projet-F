@@ -1,3 +1,5 @@
+
+<?php if (!defined('APP_VERSION')) die("Yo, what's up?"); ?>
 <!DOCTYPE html>
 
 <head>
@@ -8,8 +10,8 @@
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="/assets/css/animate.min.css" />
+    <link rel="stylesheet" href="<?= active_theme("url")."/assets/css/style.css" ?>" />
+    <link rel="stylesheet" href="<?= active_theme("url")."/assets/css/animate.min.css" ?>" />
     <title>Home</title>
 </head>
 
@@ -21,7 +23,7 @@
             <div class="flex-1 md:flex md:items-center md:gap-12">
 
                 <span class="sr-only">Home</span>
-                <img src="./img/Logo.png" class="w-[212px] h-[54px]">
+                <img src="<?= active_theme("url") . "/assets/img/Logo.png" ?>" class="w-[212px] h-[54px]">
 
             </div>
 
@@ -95,7 +97,7 @@
 
     <section class="max-w-screen-xl px-4 mx-auto">
         <div class="container mx-auto flex px-5 pt-20 md:flex-row flex-col relative">
-            <img src="./img/float_logo.png" class="float_logo"></img>
+            <img src="<?= active_theme("url") . "/assets/img/float_logo.png" ?>" class="float_logo"></img>
             <div
                 class="lg:flex-grow md:w-2/3 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                 <h1 class="title-font text-white capitalize drop-shadow">Get Famous And Earn <br> New Customers With
@@ -115,7 +117,7 @@
             </div>
             <div class="lg:w-full md:w-1/2 pb-16">
                 <img class="object-cover object-center rounded animate__animated animate__pulse animate__delay-1s"
-                    alt="hero" src="./img/image_hero.png">
+                    alt="hero" src="<?= active_theme("url") . "/assets/img/image_hero.png" ?>">
             </div>
         </div>
     </section>
@@ -133,7 +135,7 @@
             <div class="flex flex-wrap">
                 <div class="p-4 md:w-1/3 ">
                     <div class="h-full rounded-lg overflow-hidden bg-[#FFD583] shadow-md">
-                        <img class="img_anim object-center w-full" src="./img/Saly-2.png" alt="">
+                        <img class="img_anim object-center w-full" src="<?= active_theme("url") . "/assets/img/Saly-2.png" ?>" alt="">
                         <div class="p-6 bg-white  h-[274px]">
                             <h1
                                 class="title-font2 text-2xl md:text-xl lg:text-2xl font-black text-gray-900 mb-3 text-center capitalize">
@@ -149,7 +151,7 @@
                 </div>
                 <div class="p-4 md:w-1/3">
                     <div class="h-full rounded-lg overflow-hidden bg-blue-300 shadow-md">
-                        <img class="img_anim object-center w-full" src="./img/Saly-3.png" alt="">
+                        <img class="img_anim object-center w-full" src="<?= active_theme("url") . "/assets/img/Saly-3.png" ?>" alt="">
                         <div class="p-6 bg-white h-[274px]">
 
                             <h1
@@ -166,7 +168,7 @@
                 </div>
                 <div class="p-4 md:w-1/3">
                     <div class="h-full rounded-lg overflow-hidden bg-[#FFAF83] shadow-md">
-                        <img class="img_anim object-center w-full" src="./img/Saly-11.png" alt="">
+                        <img class="img_anim object-center w-full" src="<?= active_theme("url") . "/assets/img/Saly-11.png" ?>" alt="">
                         <div class="p-6 bg-white  h-[274px]">
                             <h1
                                 class="title-font2 text-2xl md:text-xl lg:text-2xl font-black text-gray-900 mb-3 text-center capitalize">
@@ -195,7 +197,7 @@
             <card class="text-gray-600 md:px-8 px-2 pt-14">
                 <div class="container mx-auto flex md:px-5 py-8 md:flex-row flex-col items-center">
                     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-[366px]">
-                        <img class="object-cover object-center rounded p-8" alt="" src="./img/Group.png">
+                        <img class="object-cover object-center rounded p-8" alt="" src="<?= active_theme("url") . "/assets/img/Group.png" ?>">
                     </div>
                     <div
                         class="lg:flex-grow md:w-1/2 lg:pr-14 md:pl-14 flex flex-col md:items-start md:text-left md:mb-0 items-center text-center ">
@@ -229,7 +231,7 @@
                             eget quis maecenas turpis sagittis, neque. Malesuada nisi.</p>
                     </div>
                     <div class="lg:p-8 lg:w-full lg:ml-8 md:w-1/2 w-[366px]">
-                        <img class="object-cover object-center rounded p-12 lg:ml-8" alt="" src="./img/Group2.png">
+                        <img class="object-cover object-center rounded p-12 lg:ml-8" alt="" src="<?= active_theme("url") . "/assets/img/Group2.png" ?>">
                     </div>
                 </div>
             </card>
@@ -242,7 +244,7 @@
             <card class="text-gray-600 md:px-8 px-2">
                 <div class="container mx-auto flex lg:px-5 md:flex-row flex-col items-center">
                     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-full">
-                        <img class="object-cover object-center px-8 md:px-2" alt="" src="./img/Group4.png">
+                        <img class="object-cover object-center px-8 md:px-2" alt="" src="<?= active_theme("url") . "/assets/img/Group4.png" ?>">
                     </div>
                     <div
                         class="lg:flex-grow md:w-1/2 lg:pr-14 md:pl-14 flex flex-col md:items-start md:text-left md:mb-0 items-center text-center mx-4 md:mx-0">
@@ -285,11 +287,11 @@
                         <div class="flex">
                             <button onclick="stats1();"
                                 class="mt-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md">
-                                <img class="h-4 w-4" src="./img/left.png">
+                                <img class="h-4 w-4" src="<?= active_theme("url") . "/assets/img/left.png" ?>">
                             </button>
                             <button onclick="stats2();"
                                 class="mt-4 ml-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform  text-lg shadow-md">
-                                <img class="h-4 w-4" src="./img/right.png">
+                                <img class="h-4 w-4" src="<?= active_theme("url") . "/assets/img/right.png" ?>">
                             </button>
                         </div>
                     </div>
@@ -317,7 +319,7 @@
                     <input type="text" id="textInput" value="33" class="hidden">
                     <input type="text" id="textInputr" value="1"
                         class="w-8 bg-[#0D59EF] rounded-lg text-white pl-[12px] mb-2 pointer-events-none ml-[31%]">
-                    <input id="slider" oninput="changeHandler(this), updateTextInput(this.value);"
+                    <input id="slider" onchange="changeHandler(this), updateTextInput(this.value);"
                         onpointermove="changeHandler(this), updateTextInput(this.value);"
                         class="w-full cursor-pointer accent-[#0D59EF] rounded-full " type="range" min="0" max="100"
                         step="3" value="33" />
@@ -356,61 +358,61 @@
                                 <ul role="list" class="mt-4 space-y-2 text-sm">
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4 rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Avg. 400+ Reel Organic Followers/week</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Targeted Audience</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">7 Days Free Trial</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Intelligent Growth</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Exclusive access to weekly updates</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Full setup on your account</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Secure by free high-quality 4g proxy</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Normal support</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Account statistics</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Interactive Dashboard</span>
                                     </li>
@@ -452,61 +454,61 @@
                                 <ul role="list" class="mt-4 space-y-2 text-sm">
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4 rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Avg. 400+ Reel Organic Followers/week</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Targeted Audience</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">7 Days Free Trial</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Intelligent Growth</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Exclusive access to weekly updates</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Full setup on your account</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Secure by free high-quality 4g proxy</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Normal support</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Account statistics</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Interactive Dashboard</span>
                                     </li>
@@ -548,61 +550,61 @@
                                 <ul role="list" class="mt-4 space-y-2 text-sm">
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4 rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Avg. 400+ Reel Organic Followers/week</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Targeted Audience</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">7 Days Free Trial</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Intelligent Growth</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Exclusive access to weekly updates</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Full setup on your account</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Secure by free high-quality 4g proxy</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Normal support</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Account statistics</span>
                                     </li>
                                     <li class="flex">
                                         <div class="inline-flex items-center w-4 h-4  rounded-xl">
-                                            <img src="./img/check.png" alt="">
+                                            <img src="<?= active_theme("url") . "/assets/img/check.png" ?>" alt="">
                                         </div>
                                         <span class="ml-3 text-neutral-600">Interactive Dashboard</span>
                                     </li>
@@ -643,10 +645,10 @@
                         <div class="hidden md:flex">
                             <button onclick="displayClient();"
                                 class="mt-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
-                                    class="h-4 w-4" src="./img/left.png"></button>
+                                    class="h-4 w-4" src="<?= active_theme("url") . "/assets/img/left.png" ?>"></button>
                             <button onclick="displayClient();"
                                 class="mt-4 ml-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
-                                    class="h-4 w-4" src="./img/right.png"></button>
+                                    class="h-4 w-4" src="<?= active_theme("url") . "/assets/img/right.png" ?>"></button>
                         </div>
                     </div>
 
@@ -663,10 +665,10 @@
                                         Designer</span>
                                 </h2>
                                 <div class="flex">
-                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/star.png" ?>" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/star.png" ?>" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/star.png" ?>" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/star.png" ?>" class="h-4 w-4 mt-8 mx-0.5" alt="">
                                 </div>
                             </div>
                             <p class="mx-auto font-medium text-sm leading-relaxed text-gray-800 overflow-clip h-[68px] md:h-auto">Sed nec aenean
@@ -689,11 +691,11 @@
                                     <span href="#" class="font-light text-gray-600 lg:mb-0 text-xs">Web Developer</span>
                                 </h2>
                                 <div class="flex">
-                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/star.png" ?>" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/star.png" ?>" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/star.png" ?>" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/star.png" ?>" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/star.png" ?>" class="h-4 w-4 mt-8 mx-0.5" alt="">
                                 </div>
                             </div>
                             <p class="mx-auto font-medium text-sm leading-relaxed text-gray-800 h-[68px] md:h-auto">Sed nec aenean
@@ -716,9 +718,9 @@
                                     <span href="#" class="font-light text-gray-600 lg:mb-0 text-xs">Photographer</span>
                                 </h2>
                                 <div class="flex">
-                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/star.png" ?>" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/star.png" ?>" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/star.png" ?>" class="h-4 w-4 mt-8 mx-0.5" alt="">
                                   
                                 </div>
                             </div>
@@ -742,11 +744,11 @@
                                     <span href="#" class="font-light text-gray-600 lg:mb-0 text-xs">Developer</span>
                                 </h2>
                                 <div class="flex">
-                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
-                                    <img src="./img/star.png" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/star.png" ?>" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/star.png" ?>" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/star.png" ?>" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/star.png" ?>" class="h-4 w-4 mt-8 mx-0.5" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/star.png" ?>" class="h-4 w-4 mt-8 mx-0.5" alt="">
                                 </div>
                             </div>
                             <p class="mx-auto font-medium text-sm leading-relaxed text-gray-800 h-[68px] md:h-auto">Sed nec aenean
@@ -761,10 +763,10 @@
                         <button
                             class=" mt-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none
                         hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
-                            class="h-4 w-4" src="./img/left.png" onclick="displayClient2();"></button>
+                            class="h-4 w-4" src="<?= active_theme("url") . "/assets/img/left.png" ?>" onclick="displayClient2();"></button>
                         <button
                             class="mt-4 ml-4 text-gray-700 bg-[#0D59EF] border-0 py-3 px-3 focus:outline-none hover:bg-gray-400 rounded transition-colors duration-300 transform text-lg shadow-md"><img
-                                class="h-4 w-4" src="./img/right.png" onclick="displayClient2();"></button>
+                                class="h-4 w-4" src="<?= active_theme("url") . "/assets/img/right.png" ?>" onclick="displayClient2();"></button>
                     </div>
                 </div>
             </div>
@@ -817,7 +819,7 @@
                         </h5>
 
                         <span>
-                            <img class="w-4 h-4" src="./img/plus.png" alt="">
+                            <img class="w-4 h-4" src="<?= active_theme("url") . "/assets/img/plus.png" ?>" alt="">
                         </span>
                     </summary>
 
@@ -836,7 +838,7 @@
                         </h5>
 
                         <span>
-                            <img class="w-4 h-4" src="./img/plus.png" alt="">
+                            <img class="w-4 h-4" src="<?= active_theme("url") . "/assets/img/plus.png" ?>" alt="">
                         </span>
                     </summary>
 
@@ -854,7 +856,7 @@
                         </h5>
 
                         <span>
-                            <img class="w-4 h-4" src="./img/plus.png" alt="">
+                            <img class="w-4 h-4" src="<?= active_theme("url") . "/assets/img/plus.png" ?>" alt="">
                         </span>
                     </summary>
 
@@ -872,7 +874,7 @@
                         </h5>
 
                         <span>
-                            <img class="w-4 h-4" src="./img/plus.png" alt="">
+                            <img class="w-4 h-4" src="<?= active_theme("url") . "/assets/img/plus.png" ?>" alt="">
                         </span>
                     </summary>
 
@@ -890,7 +892,7 @@
                         </h5>
 
                         <span>
-                            <img class="w-4 h-4" src="./img/plus.png" alt="">
+                            <img class="w-4 h-4" src="<?= active_theme("url") . "/assets/img/plus.png" ?>" alt="">
                         </span>
                     </summary>
 
@@ -908,7 +910,7 @@
                         </h5>
 
                         <span>
-                            <img class="w-4 h-4" src="./img/plus.png" alt="">
+                            <img class="w-4 h-4" src="<?= active_theme("url") . "/assets/img/plus.png" ?>" alt="">
                         </span>
                     </summary>
 
@@ -946,7 +948,7 @@
         <div class="max-w-screen-xl py-16 mx-auto px-8">
             <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
                 <div>
-                    <img src="./img/footer_logo.png" class="h-10">
+                    <img src="<?= active_theme("url") . "/assets/img/footer_logo.png" ?>" class="h-10">
 
                     <p class="max-w-md mt-4 text-sm text-gray-500">
                         This app is in no way sponsored, endorsed, affiliated with, administered by, or associated with
@@ -980,31 +982,31 @@
                         <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
                             <li class="flex">
                                 <div class="inline-flex items-center w-4 h-4 rounded-xl pt-1 pr-1">
-                                    <img class="" src="./img/eva_facebook-fill.png" alt="">
+                                    <img class="" src="<?= active_theme("url") . "/assets/img/eva_facebook-fill.png" ?>" alt="">
                                 </div>
                                 <a class="hover:opacity-75" href="">Facebook</a>
                             </li>
                             <li class="flex">
                                 <div class="inline-flex items-center w-4 h-4 rounded-xl pt-1 pr-1">
-                                    <img src="./img/ant-design_instagram-filled.png" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/ant-design_instagram-filled.png" ?>" alt="">
                                 </div>
                                 <a class="hover:opacity-75" href="">Instagram</a>
                             </li>
                             <li class="flex">
                                 <div class="inline-flex items-center w-4 h-4 rounded-xl pt-1 pr-1">
-                                    <img src="./img/akar-icons_youtube-fill.png" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/akar-icons_youtube-fill.png" ?>" alt="">
                                 </div>
                                 <a class="hover:opacity-75" href="">Youtube</a>
                             </li>
                             <li class="flex">
                                 <div class="inline-flex items-center w-4 h-4 rounded-xl pt-1 pr-1">
-                                    <img src="./img/akar-icons_linkedin-fill.png" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/akar-icons_linkedin-fill.png" ?>" alt="">
                                 </div>
                                 <a class="hover:opacity-75" href="">LinkedIn</a>
                             </li>
                             <li class="flex">
                                 <div class="inline-flex items-center w-4 h-4 rounded-xl pt-1 pr-1">
-                                    <img src="./img/bxl_patreon.png" alt="">
+                                    <img src="<?= active_theme("url") . "/assets/img/bxl_patreon.png" ?>" alt="">
                                 </div>
                                 <a class="hover:opacity-75" href="">Patreon</a>
                             </li>
@@ -1037,6 +1039,118 @@
 
     </footer>
 </body>
-<script src="./js/app.js"></script>
+
+<script>
+const slider = document.getElementById('slider')
+slider.defaultValue = 33
+const react1 = document.querySelector('#react1')
+const react2 = document.querySelector('#react2')
+const react3 = document.querySelector('#react3')
+const valueslider = document.getElementById('textInput')
+const textInputr = document.getElementById('textInputr')
+const btn1 = document.getElementById('stats1')
+const btn2 = document.getElementById('stats2')
+
+const client1 = document.getElementById('client1')
+const client2 = document.getElementById('client2')
+const client3 = document.getElementById('client3')
+const client4 = document.getElementById('client4')
+
+function changeHandler(e) {
+    console.log(valueslider.value)
+    switch (true) {
+        case (0 <= valueslider.value && valueslider.value < 33):
+            react1.style.display = 'block'
+            react2.style.display = 'none'
+            react3.style.display = 'none'
+            break;
+        case (34 <= valueslider.value && valueslider.value < 66):
+            react2.style.display = 'block'
+            react1.style.display = 'none'
+            react3.style.display = 'none'
+            break;
+        case (67 <= valueslider.value && valueslider.value < 100):
+            react3.style.display = 'block'
+            react1.style.display = 'none'
+            react2.style.display = 'none'
+
+            break;
+    }
+}
+
+function updateTextInput(val) {
+    const color_1 = 'linear-gradient(to right, #0D59EF 0%, #0D59EF ' + val + '%, white ' + val + '%, white 100%)'
+    const color_2 = '#FFFFFF'
+    var rounded = Math.ceil(val / 33)
+    document.getElementById('textInputr').value = rounded;
+    document.getElementById('textInput').value = val;
+    textInputr.style.marginLeft = val - 2 + '%';
+    slider.style.background = color_1;
+}
+
+function stats1() {
+    btn1.style.display = 'block';
+    btn2.style.display = 'none';
+}
+
+function stats2() {
+    btn1.style.display = 'none';
+    btn2.style.display = 'block';
+
+}
+
+
+function getMultipleRandom(arr, num) {
+    const shuffled = [...arr].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, num);
+  }
+  
+
+
+function displayClient(){
+    const arr = ['client1', 'client2', 'client3', 'client4'];
+   
+    var rands = getMultipleRandom(arr, 4);
+    const client11 = document.getElementById(rands[1])
+    const client22 = document.getElementById(rands[0])
+    const client33 = document.getElementById(rands[3])
+    const client44 = document.getElementById(rands[2])
+    client11.style.display = 'block';
+    client22.style.display = 'block';
+    client33.style.display = 'none';
+    client44.style.display = 'none';
+
+}
+
+function displayClient2(){
+    const arr = ['client1', 'client2', 'client3', 'client4'];
+   
+    var rands = getMultipleRandom(arr, 4);
+    const client11 = document.getElementById(rands[1])
+    const client22 = document.getElementById(rands[0])
+    const client33 = document.getElementById(rands[3])
+    const client44 = document.getElementById(rands[2])
+    client11.style.display = 'block';
+    client22.style.display = 'none';
+    client33.style.display = 'none';
+    client44.style.display = 'none';
+
+}
+
+const scrollM = document.getElementById('scrollM')
+document.getElementById('scrollM').style.display = 'block';
+
+document.addEventListener("scroll", () => {
+    var scroll_position = window.scrollY;
+    if (scroll_position > 60) {
+        scrollM.style.display = 'none';
+  
+    } else 
+    {
+        scrollM.style.display = 'block';
+
+    }
+  });
+</script>
 
 </html>

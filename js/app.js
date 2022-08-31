@@ -93,3 +93,18 @@ function displayClient2(){
     client44.style.display = 'none';
 
 }
+
+const scrollM = document.getElementById('scrollM')
+document.getElementById('scrollM').style.display = 'block';
+
+document.addEventListener("scroll", () => {
+    var scroll_position = window.scrollY;
+    if (scroll_position > 60) {
+        scrollM.style.display = 'none';
+  
+    } else 
+    {
+        scrollM.style.display = 'block';
+
+    }
+  });

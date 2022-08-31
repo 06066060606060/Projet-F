@@ -15,7 +15,7 @@
 
 <body class="bg-gray-50">
     <!-- ________________________________________BlocK 1_+_navbar____________________________________________ -->
- 
+
     <header class="max-w-screen-xl px-4 mx-auto">
         <div class="flex items-center justify-between h-16">
             <div class="flex-1 md:flex md:items-center md:gap-12">
@@ -31,31 +31,36 @@
 
                     <ul class="flex items-center gap-6 text-base font-bold">
                         <li>
-                            <a class="text-[#1F2D49] transition-colors duration-300 transform hover:text-gray-600 pt-8" href="/how.html">
+                            <a class="text-[#1F2D49] transition-colors duration-300 transform hover:text-gray-600 pt-8"
+                                href="./how.html">
                                 How it works
                             </a>
                         </li>
 
                         <li>
-                            <a class="text-[#1F2D49] transition-colors duration-300 transform hover:text-gray-600" href="/results.html">
+                            <a class="text-[#1F2D49] transition-colors duration-300 transform hover:text-gray-600"
+                                href="./results.html">
                                 Results
                             </a>
                         </li>
 
                         <li>
-                            <a class="text-[#1F2D49] transition-colors duration-300 transform hover:text-gray-600" href="/faq.html">
+                            <a class="text-[#1F2D49] transition-colors duration-300 transform hover:text-gray-600"
+                                href="./faq.html">
                                 FAQ
                             </a>
                         </li>
 
                         <li>
-                            <a class="text-[#1F2D49] transition-colors duration-300 transform hover:text-gray-600" href="/">
+                            <a class="text-[#1F2D49] transition-colors duration-300 transform hover:text-gray-600"
+                                href="./">
                                 Sign up
                             </a>
                         </li>
 
                         <li>
-                            <a class="text-[#1F2D49] transition-colors duration-300 transform hover:text-gray-600" href="/">
+                            <a class="text-[#1F2D49] transition-colors duration-300 transform hover:text-gray-600"
+                                href="./">
                                 Login
                             </a>
                         </li>
@@ -66,22 +71,22 @@
                 <div class="flex items-center gap-4">
                     <div class="hidden md:flex lg:flex">
                         <a class="px-5 py-2.5 text-sm text-white bg-[#1F2D49] rounded-lg font-black  transition-colors duration-300 transform hover:bg-blue-800 hover:text-white shadow-md"
-                            href="/">
+                            href="./">
                             CONTACT US
                         </a>
                     </div>
                     <!-- menu mobile -->
-                    <div class="block md:hidden">
+                    <div class="hidden" id="scrollM">
                         <div class="hamburger-menu">
                             <input id="menu__toggle" type="checkbox" />
-                            <label class="menu__btn" for="menu__toggle">
+                            <label class="menu__btnD" for="menu__toggle">
                                 <span></span>
                             </label>
 
                             <ul class="menu__box">
-                                <li><a class="menu__item" href="/how.html">How it works</a></li>
-                                <li><a class="menu__item" href="/results.html">Results</a></li>
-                                <li><a class="menu__item" href="/faq.html">FAQ</a></li>
+                                <li><a class="menu__item" href="./how.html">How it works</a></li>
+                                <li><a class="menu__item" href="./results.html">Results</a></li>
+                                <li><a class="menu__item" href="./faq.html">FAQ</a></li>
                                 <li><a class="menu__item" href="#">Sign up</a></li>
                                 <li><a class="menu__item" href="#">Login</a></li>
                             </ul>
@@ -93,6 +98,341 @@
     </header>
 
 
+    <!-- _______________________________________pricing ____________________________________________ -->
+
+    <section>
+        <div class="block6"></div>
+        <div class="relative items-center w-full mx-auto max-w-7xl">
+            <div>
+                <div class="flex flex-col lg:flex-row justify-center pt-20 pr-4">
+                    <div class="flex flex-col pt-4 md:pt-16 px-6 lg:mr-24">
+                        <h1 class="text-4xl md:text-5xl mb-4 font-black text-gray-900 capitalize md:p-4">Pricing plans for<br>
+                            <span style="color: #0D59EF">all use cases</span>
+                        </h1>
+                        <p class="leading-relaxed text-gray-500 font-medium max-w-xl p-2 px-4 text-left text-xl">You
+                            get
+                            one week for free.
+                            Our
+                            prices
+                            are variable depending on the number of accounts and the duration of the subscription </p>
+                            <p class="leading-relaxed font-bold text-black max-w-xl p-2 px-4 text-xl">
+                                Start today and see the results tomorrow.
+                            </p>
+                            <div class="slider mx-auto w-full px-4">
+                                <input type="text" id="textInput" value="33" class="hidden">
+                                <input type="text" id="textInputr" value="1"
+                                    class="w-8 bg-[#0D59EF] rounded-lg text-white pl-[12px] mb-2 pointer-events-none ml-[31%]">
+                                <input id="slider" onchange="changeHandler(this), updateTextInput(this.value);"
+                                    onpointermove="changeHandler(this), updateTextInput(this.value);"
+                                    class="w-full cursor-pointer accent-[#0D59EF] rounded-full " type="range"
+                                    min="0" max="100" step="3" value="33" />
+                            </div>
+                    </div>
+
+                   
+
+                    <div id="react1" style="display: block" class="relative">
+                        <div class="relative pb-14 pt-8 lg:grid lg:grid-cols-2 rounded-xl mx-8 lg:mx-0">
+                            <!-- section gauche -->
+                            <div
+                                class="relative flex flex-col px-10 py-8 bg-white rounded-2xl shadow-md z-10 border-t-4 border-[#0D59EF]">
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-semibold text-[#0D59EF]">Pro - Weekly</h3>
+                                    <p class="flex items-baseline mt-4 text-[#1F2D49]">
+                                        <span class="text-5xl font-extrabold tracking-tight">$250</span>
+                                    </p>
+                                    <ul role="list" class="pt-6 mt-6 py-4 space-y-2">
+                                        <p class="text-md font-semibold text-neutral-600 max-w-[220px]">Explode your
+                                            engagement
+                                            /
+                                            <br> followers and gain new customers.<br> <br>
+                                            Start the rapid Instagram account growth!
+                                        </p>
+                                    </ul>
+                                </div>
+                                <div class="z-50 rounded-lg pt-8">
+                                    <a href="" type="highlight"
+                                        class="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-white shadow-md rounded-xl transition-colors duration-300 transform bg-[#0D59EF] hover:bg-gray-400">
+                                        7-Day Free Trial </a>
+                                </div>
+                            </div>
+
+                            <!-- section droite -->
+                            <div class="relative flex flex-col md:py-8 lg:py-12">
+                                <div class="relative flex-1 bg-[white] p-6 rounded-r-2xl">
+                                    <h3 class="text-xl font-semibold text-neutral-600">What’s included</h3>
+                                    <ul role="list" class="mt-4 space-y-2 text-sm">
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4 rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Avg. 400+ Reel Organic
+                                                Followers/week</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Targeted Audience</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">7 Days Free Trial</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Intelligent Growth</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Exclusive access to weekly
+                                                updates</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Full setup on your account</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Secure by free high-quality 4g
+                                                proxy</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Normal support</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Account statistics</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Interactive Dashboard</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="react2" style="display: none" class="relative">
+                        <div class="relative pb-14 pt-8  lg:grid lg:grid-cols-2 rounded-xl mx-8 lg:mx-0">
+                            <!-- section gauche -->
+                            <div
+                                class="relative flex flex-col px-10 py-8 bg-white rounded-2xl shadow-md z-10 border-t-4 border-[#0D59EF]">
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-semibold text-[#0D59EF]">Pro - Monthly</h3>
+                                    <p class="flex items-baseline mt-4 text-[#1F2D49]">
+                                        <span class="text-5xl font-extrabold tracking-tight">$650</span>
+                                    </p>
+                                    <ul role="list" class="pt-6 mt-6 py-4 space-y-2">
+                                        <p class="text-md font-semibold text-neutral-600 max-w-[220px]">Explode your
+                                            engagement
+                                            /
+                                            <br> followers and gain new customers.<br> <br>
+                                            Start the rapid Instagram account growth!
+                                        </p>
+                                    </ul>
+                                </div>
+                                <div class="z-50 rounded-lg pt-8">
+                                    <a href="" type="highlight"
+                                        class="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-white shadow-md rounded-xl transition-colors duration-300 transform bg-[#0D59EF] hover:bg-gray-400">
+                                        7-Day Free Trial </a>
+                                </div>
+                            </div>
+
+                            <!-- section droite -->
+                            <div class="relative flex flex-col md:py-8 lg:py-12">
+                                <div class="relative flex-1 bg-[white] p-6 rounded-r-2xl">
+                                    <h3 class="text-xl font-semibold text-neutral-600">What’s included</h3>
+                                    <ul role="list" class="mt-4 space-y-2 text-sm">
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4 rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Avg. 400+ Reel Organic
+                                                Followers/week</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Targeted Audience</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">7 Days Free Trial</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Intelligent Growth</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Exclusive access to weekly
+                                                updates</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Full setup on your account</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Secure by free high-quality 4g
+                                                proxy</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Normal support</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Account statistics</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Interactive Dashboard</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="react3" style="display: none" class="relative">
+                        <div class="relative pb-14 pt-8  lg:grid lg:grid-cols-2 rounded-xl mx-8 lg:mx-0">
+                            <!-- section gauche -->
+                            <div
+                                class="relative flex flex-col px-10 py-8 bg-white rounded-2xl shadow-md z-10 border-t-4 border-[#0D59EF]">
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-semibold text-[#0D59EF]">Pro - Annually
+                                    </h3>
+                                    <p class="flex items-baseline mt-4 text-[#1F2D49]">
+                                        <span class="text-5xl font-extrabold tracking-tight">$6050</span>
+                                    </p>
+                                    <ul role="list" class="pt-6 mt-6 py-4 space-y-2">
+                                        <p class="text-md font-semibold text-neutral-600 max-w-[220px]">Explode your
+                                            engagement
+                                            /
+                                            <br> followers and gain new customers.<br> <br>
+                                            Start the rapid Instagram account growth!
+                                        </p>
+                                    </ul>
+                                </div>
+                                <div class="z-50 rounded-lg pt-8">
+                                    <a href="" type="highlight"
+                                        class="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-white shadow-md rounded-xl transition-colors duration-300 transform bg-[#0D59EF] hover:bg-gray-400">
+                                        7-Day Free Trial </a>
+                                </div>
+                            </div>
+
+                            <!-- section droite -->
+                            <div class="relative flex flex-col md:py-8 lg:py-12">
+                                <div class="relative flex-1 bg-[white] p-6 rounded-r-2xl">
+                                    <h3 class="text-xl font-semibold text-neutral-600">What’s included</h3>
+                                    <ul role="list" class="mt-4 space-y-2 text-sm">
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4 rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Avg. 400+ Reel Organic
+                                                Followers/week</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Targeted Audience</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">7 Days Free Trial</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Intelligent Growth</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Exclusive access to weekly
+                                                updates</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Full setup on your account</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Secure by free high-quality 4g
+                                                proxy</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Normal support</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Account statistics</span>
+                                        </li>
+                                        <li class="flex">
+                                            <div class="inline-flex items-center w-4 h-4  rounded-xl">
+                                                <img src="./img/check.png" alt="">
+                                            </div>
+                                            <span class="ml-3 text-neutral-600">Interactive Dashboard</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -113,14 +453,177 @@
 
 
 
+    <!-- ________________________________________still not sure______________________________________________ -->
 
 
+    <section class="lg:max-w-screen-lg mx-auto py-16">
+        <div class="bg-[#0D59EF] rounded-3xl mx-8 relative overflow-hidden">
+            <div class="doghnut "></div>
+            <div class="container flex flex-col items-center px-4 py-12 mx-auto text-center">
 
+                <h2 class="text-4xl md:text-3xl font-bold tracking-tight text-gray-600 dark:text-white">
+                    Still Not Sure? Checkout These Stats:
+                </h2>
 
+                <p class="block max-w-2xl mt-4 text-sm text-gray-300 dark:text-gray-300">Sed nascetur facilisis senectus
+                    eget elementum dignissim mi nec sagittis. Sociis consequat, cursus adipiscing eget ac integer
+                    ultricies neque. Arcu habitant rutrum nisl scelerisque odio senectus aliquam id rhoncus. Congue non
+                    porttitor feugiat tincidunt. </p>
+
+                <div class="mt-6">
+                    <div class="inline-flex w-full mt-4 rounded-md shadow sm:w-auto sm:mx-3 sm:mt-0">
+                        <a href="#"
+                            class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-black transition-colors duration-300 transform sm:w-auto bg-white shadow-md hover:bg-gray-400 rounded-lg">
+                            <span class="mx-2 uppercase font-bold text-sm">
+                                try it now
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="doghnut2 overflow-hidden"></div>
+        </div>
+    </section>
+
+    <!-- ________________________________________FAQS______________________________________________ -->
+    <section class="lg:max-w-screen-lg mx-auto py-16">
+        <div class="flex flex-col md:max-w-xl mx-auto px-8 py-4 md:px-2 items-center">
+            <h1 class="title-font text-3xl font-black text-gray-900 mb-3 text-center pb-8 capitalize">FAQs</h1>
+            <div class="-my-8 divide-y divide-gray-100 pb-20 md:w-[560px] w-auto">
+                <details class="py-8 group" open>
+                    <summary class="flex items-center justify-between cursor-pointer">
+                        <h5 class="text-md font-black text-gray-900">
+                            Malesuada lorem est non eu.
+                        </h5>
+
+                        <span>
+                            <img class="w-4 h-4" src="./img/plus.png" alt="">
+                        </span>
+                    </summary>
+
+                    <p class="mt-4 leading-relaxed text-sm text-gray-700">
+                        Non, amet viverra at pellentesque feugiat odio. Dapibus consequat massa habitant ut fringilla
+                        urna
+                        ultrices at purus. Id massa turpis penatibus maecenas et suscipit. Molestie in placerat cras
+                        tellus.
+                        Id id quam lorem penatibus morbi elementum mi pellentesque aenean. Amet platea.
+                    </p>
+                </details>
+                <details class="py-8 group">
+                    <summary class="flex items-center justify-between cursor-pointer">
+                        <h5 class="text-md  font-black text-gray-900">
+                            Vitae molestie tristique amet suspendisse.
+                        </h5>
+
+                        <span>
+                            <img class="w-4 h-4" src="./img/plus.png" alt="">
+                        </span>
+                    </summary>
+
+                    <p class="mt-4 leading-relaxed text-sm text-gray-700">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+                        veritatis molestias culpa in, recusandae laboriosam neque aliquid libero
+                        nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio
+                        corporis earum similique!
+                    </p>
+                </details>
+                <details class="py-8 group">
+                    <summary class="flex items-center justify-between cursor-pointer">
+                        <h5 class="text-md  font-black text-gray-900">
+                            Morbi proin massa dictum et non netus sed eu.
+                        </h5>
+
+                        <span>
+                            <img class="w-4 h-4" src="./img/plus.png" alt="">
+                        </span>
+                    </summary>
+
+                    <p class="mt-4 leading-relaxed text-sm text-gray-700">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+                        veritatis molestias culpa in, recusandae laboriosam neque aliquid libero
+                        nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio
+                        corporis earum similique!
+                    </p>
+                </details>
+                <details class="py-8 group">
+                    <summary class="flex items-center justify-between cursor-pointer">
+                        <h5 class="text-md  font-black text-gray-900">
+                            Eu ullamcorper non a a faucibus eget dui sit.
+                        </h5>
+
+                        <span>
+                            <img class="w-4 h-4" src="./img/plus.png" alt="">
+                        </span>
+                    </summary>
+
+                    <p class="mt-4 leading-relaxed text-sm text-gray-700">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+                        veritatis molestias culpa in, recusandae laboriosam neque aliquid libero
+                        nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio
+                        corporis earum similique!
+                    </p>
+                </details>
+                <details class="py-8 group">
+                    <summary class="flex items-center justify-between cursor-pointer">
+                        <h5 class="text-md  font-black text-gray-900">
+                            Nibh mauris pretium lectus quam leo eu dui.
+                        </h5>
+
+                        <span>
+                            <img class="w-4 h-4" src="./img/plus.png" alt="">
+                        </span>
+                    </summary>
+
+                    <p class="mt-4 leading-relaxed text-sm text-gray-700">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+                        veritatis molestias culpa in, recusandae laboriosam neque aliquid libero
+                        nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio
+                        corporis earum similique!
+                    </p>
+                </details>
+                <details class="py-8 group">
+                    <summary class="flex items-center justify-between cursor-pointer">
+                        <h5 class="text-md  font-black text-gray-900">
+                            Iaculis ornare adipiscing arcu tellus tortor.
+                        </h5>
+
+                        <span>
+                            <img class="w-4 h-4" src="./img/plus.png" alt="">
+                        </span>
+                    </summary>
+
+                    <p class="mt-4 leading-relaxed text-sm text-gray-700">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+                        veritatis molestias culpa in, recusandae laboriosam neque aliquid libero
+                        nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio
+                        corporis earum similique!
+                    </p>
+                </details>
+                <div class="bg-[#0D59EF] rounded-xl mt-4">
+                    <div
+                        class="container flex flex-col md:flex-row px-4 py-8 md:justify-around items-center text-center">
+                        <h2
+                            class="text-4xl md:text-xl font-bold tracking-tight text-gray-600 dark:text-white pb-4 md:pb-0">
+                            have more questions?
+                        </h2>
+                        <div class="mt-1 pt-4 md:pt-0">
+                            <a href="#"
+                                class="justify-center w-full px-4 py-2 text-base font-medium text-black sm:w-auto transition-colors duration-300 transform bg-white shadow-md hover:bg-gray-400 rounded-md">
+                                <span class="mx-2 uppercase font-bold text-sm">
+                                    CONTACT US
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
     <!-- ________________________________________footer______________________________________________ -->
 
-    <footer class="bg-white mx-auto flex flex-col justify-center">
-        <div class="max-w-screen-xl py-16 mx-auto px-8">
+    <footer class="bg-white mx-auto flex flex-col justify-center pb-8">
+        <div class="max-w-screen-xl py-4 md:py-16 mx-auto px-8">
             <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
                 <div>
                     <img src="./img/footer_logo.png" class="h-10">
