@@ -120,18 +120,17 @@ img{
 
 
 .block6{
-  position: absolute;
+
   z-index: -10;
-  height: 50vh;
+  height: inherit;
   width: 100%;
   margin-top: 10px;
   background: #EBF5FF;
 }
 
 .block7{
-  position: absolute;
   z-index: -10;
-  height: 55vh;
+  height: inherit;
   width: 100%;
   margin-top: 10px;
   background: #EBF5FF;
@@ -227,9 +226,6 @@ img{
       margin-top: -50px;
   }
 
-  .block6{
-    height: 100vh;
-  }
 
 }
 
@@ -265,15 +261,6 @@ img{
     .block4 {
         height: 500vh;
         top: 0vh;
-    }
-
-    .block6{
-      height: 110vh;
-    }
-    
-    .block7{
-      height: 80vh;
-      width: 100%;
     }
 
     .menu__btn {
@@ -388,3 +375,7 @@ img{
   .menu__item:hover {
     background-color: #0d58ef7f;
   }
+
+  .swiper-container {
+    overflow: hidden;
+}
