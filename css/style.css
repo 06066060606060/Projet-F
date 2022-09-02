@@ -120,12 +120,20 @@ img{
 
 
 .block6{
-
   z-index: -10;
   height: inherit;
   width: 100%;
-  margin-top: 10px;
   background: #EBF5FF;
+}
+
+.block8{
+  margin-top: -300px;
+  position: relative;
+  z-index: -10;
+  height: 250px;
+  width: 100%;
+  background: #EBF5FF;
+  clip-path: polygon(0 90%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .block7{
@@ -135,6 +143,7 @@ img{
   margin-top: 10px;
   background: #EBF5FF;
 }
+
 
 .img_anim:hover {
 
