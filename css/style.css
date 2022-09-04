@@ -170,6 +170,29 @@ img{
     margin-top: -95px;
 }
 
+.doghnut00{
+  position: absolute;
+  padding-top: 20px;
+  left: 0;
+  z-index: -1;
+}
+
+.doghnut55{
+  position: absolute;
+  margin-top: 90%;
+  left: 0;
+  z-index: -1;
+}
+
+.doghnut01{
+  position: absolute;
+  right: 0;
+  margin-right: 0%;
+  margin-top: 0px;
+  z-index: -1;
+}
+
+
 .doghnut2 {
     position: absolute;
     border: 80px solid rgba(255, 255, 255, 0.408);
@@ -234,6 +257,12 @@ img{
       clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
       margin-top: -50px;
   }
+
+  .doghnut00{
+    margin-left: -140px;
+    margin-top: 60px;
+  }
+
 
 
 }
